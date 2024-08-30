@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="product-section">
+        <div class="container">
+          <h1>Desserts</h1>
+          <div class="product-layout">
+            <div class="product-items-container"></div>
+
+            <div class="shopping-cart">
+              <h2>Your Cart ( <span class="cart-total-count">0</span> )</h2>
+
+              <div class="shopping-cart-content">
+                <div class="empty-cart-wrap">
+                  <img
+                    src="assets/images/illustration-empty-cart.svg"
+                    alt="Empty Cart"
+                    class="empty-cart-img"
+                  />
+
+                  <p>Your added items will be appear here</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-confirmation-modal">
+          <div class="confirmation-modal-container">
+            <img
+              src="assets/images/icon-order-confirmed.svg"
+              alt="Order-confirm-sign"
+              class="order-confirm-img"
+            />
+
+            <h2 class="order-confirm-title">Order Confirmed</h2>
+            <p class="order-confirm-message">We hope you enjoy your food!</p>
+
+            <div class="wrapper">
+              <div class="order-items-list"></div>
+
+              <div class="total-container">
+                <p class="c">Order Total</p>
+                <p class="order-total"></p>
+              </div>
+            </div>
+
+            <button class="start-new-btn">Start New Order</button>
+          </div>
+        </div>
+        <div class="bg-overlay"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
